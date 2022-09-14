@@ -1,3 +1,15 @@
+/*
+-----------------------------------------|SOLUTION |------------------------------------
+BEZAO C# TASK 3
+
+This program translate an English phrase to a Pig Latin Language.
+
+P.S: This Solution was provided using Windows Forms Application
+
+-----------------------------------------------------------------------------------------
+
+*/
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +20,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace PigLatinTranslator
 {
     public partial class Form1 : Form
     {
