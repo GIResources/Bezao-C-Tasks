@@ -24,7 +24,7 @@ namespace PigLatinTranslator
 {
     public partial class Form1 : Form
     {
-        const string Extension = "ay";
+        const string appendingWord = "ay";
  
         public Form1()
         {
@@ -38,25 +38,25 @@ namespace PigLatinTranslator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string translation = "";
+            string resultOftranslation = "";
             string input = textBox1.Text;
 
             string[] tempInput = input.Split(' ');
 
             for (int i = 0; i < tempInput.Length; i++)
             {
-                translation += getPigLatin(tempInput[i]);
+                resultOftranslation += PigLatinTranslation(tempInput[i]);
             }
 
-            textBox2.Text = translation;
+            textBox2.Text = resultOftranslation;
      }
 
-        private string getPigLatin(string input)
+        private string PigLatinTranslation(string input)
         {
             string word;
             string firstLetter = input.Substring(0, 1);
 
-            word = input.Substring(1) + firstLetter + Extension + " ";
+            word = input.Substring(1) + firstLetter + appendingWord + " ";
 
             return word;
         }
